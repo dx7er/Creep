@@ -67,4 +67,4 @@ Use Command: `pip install <pachage name>` to install Required Python Modules!
 1. => Use Command `bash reqs.sh` to Complete Requirements Phase!
 2. => Use Command`python helikopter.py` to Run Toolkit! \
                     **OR** \
-   => Use `python3 hlelikopter.py` to Run ToolKit!
+   => Use `python3 hellikopter.py` to Run ToolKit!
