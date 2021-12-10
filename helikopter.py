@@ -74,12 +74,12 @@ def __banner__():
 	             A                    A
 	            AAAAAAAAAAAAAAAAAAAAAAAA
 	           A                        A
-			    	 _   _      _ _ _               _            
+			    	         _   _      _ _ _               _            
 					| | | | ___| (_) | _____  _ __ | |_ ___ _ __ 
 					| |_| |/ _ \ | | |/ / _ \| '_ \| __/ _ \ '__|
 					|  _  |  __/ | |   < (_) | |_) | ||  __/ |   
 					|_| |_|\___|_|_|_|\_\___/| .__/ \__\___|_|   
-				         		 			         |_|      PTYHON TOOL KIT! """)
+				                                 |_|      PTYHON TOOL KIT! """)
 
 #main menu function
 def __main_menu__():
@@ -89,7 +89,7 @@ def __main_menu__():
 	prGreen("| [+] 1 -> DOS ATTACK                   |")
 	prGreen("| [+] 2 -> SPREAD WORM                  |")
 	prGreen("| [+] 3 -> EXTRACT CHRIOME PASWORDS     |")
-	prGreen("| [!] 0 -> Quit!		                     |")
+	prGreen("| [!] 0 -> Quit!		         |")
 	prGreen(" --------------------------------------- ")
 
 
