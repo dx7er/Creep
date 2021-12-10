@@ -1,7 +1,7 @@
 # Helikopter
 Python Toolkit containing different Cyber Attacks Tools.
 
-# Tools in Helikopter
+# Tools in Helikopter Toolkit
 ### 1. FattyNigger (PYTHON WORM)
 ### 2. Taxes (PYTHON PASS EXTRACTER)         
 ### 3. Wifiter  (BASH DOS)     
@@ -40,3 +40,20 @@ Bash DOS Script.
 
 **Source Code**
 ![wifter](https://user-images.githubusercontent.com/79792270/145558888-87c73a12-eaee-4324-ba57-1b11d107c71f.png)
+
+##
+# HELIKOPTER TOOLKIT
+Python and Bash Toolkit containing diffrent Tools used in Offensive Security!
+
+**Source Code**
+![helikopter](https://user-images.githubusercontent.com/79792270/145559798-bf276e32-7be1-4578-839a-68f9467c44a1.png)
+
+## How to Use!
+1. Use command `git clone https://github.com/naqviO7/Helikopter.git` to Clone Github Repository!
+2. Now Use Command `cd Helikopter/` to Go in Toolkit Directory!
+3. Use Command `pip install -r requirements.txt` to Install all Dependency Packages!
+
+## Commands to Run!
+=> Use `python helikopter.py` to Run Toolkit!
+        **OR**
+  Use `python3 hlelikopter.py` to Run ToolKit!
