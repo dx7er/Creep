@@ -43,7 +43,7 @@ function wifter_banner(){
 
 #function to display emoji
 function wifiter_symbol(){
-    ehco -e $green && sleep 2
+    echo -e $green && sleep 2
     echo "     (  (   O   )  )   "
     echo "           / \         "
     echo "          /   \        "
@@ -53,7 +53,7 @@ function wifiter_symbol(){
 
 #function displaying main menu
 function wifiter_menu(){
-    ehco -e $cyan && sleep 2
+    echo -e $cyan && sleep 2
     echo "   ----------------------------------------------  "
     echo "  |              W  I  F  T  E  R                | "
     echo "   ----------------------------------------------  "
