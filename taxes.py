@@ -26,12 +26,12 @@ def prBlack(skk): print("\033[98m {}\033[00m" .format(skk))
 def banner():
     prLightGray("""
          _____                   
-	|_   _|_ ___  _____  ___ 
-  	  | |/ _` \ \/ / _ \/ __|
-  	  | | (_| |>  <  __/\__ \
-  	  |_|\__,_/_/\_\___||___/
-                          PYTHON PASSWORD EXTRACTOR
-                          		4 GOOGLE CHROME! """)
+    	|_   _|_ ___  _____  ___ 
+      	  | |/ _` \ \/ / _ \/ __|
+      	  | | (_| |>  <  __/\__ \
+      	  |_|\__,_/_/\_\___||___/
+                              PYTHON PASSWORD EXTRACTOR
+                              		4 GOOGLE CHROME! """)
 
 
 #function to get date and time from chrome
@@ -156,5 +156,5 @@ if __name__ == "__main__":
     
     #calling main function
     __main_function__()
-
+    input()
 os.system('python helikopter.py')
