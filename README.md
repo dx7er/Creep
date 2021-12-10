@@ -61,9 +61,10 @@ Use Command: `pip install <pachage name>` to install Required Python Modules!
 **How to Use!**
 1. Use command `git clone https://github.com/naqviO7/Helikopter.git` to Clone Github Repository!
 2. Now Use Command `cd Helikopter/` to Go in Toolkit Directory!
-3. Use Command `pip install -r requirements.txt` to Install all Dependency Packages!
+3. Use Command `pip install -r requirements.txt` to Install all Dependency Packages! 
 
 **Commands to Run!**
-=> Use `python helikopter.py` to Run Toolkit!
-        **OR**
-  Use `python3 hlelikopter.py` to Run ToolKit!
+1. => Use Command `bash reqs.sh` to Complete Requirements Phase!
+2. => Use Command`python helikopter.py` to Run Toolkit! \
+         **OR** \
+   => Use `python3 hlelikopter.py` to Run ToolKit!
