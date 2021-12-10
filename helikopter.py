@@ -4,13 +4,24 @@ import time
 import subprocess
 
 
+#function defined for colouring
+def prRed(skk): print("\033[91m {}\033[00m" .format(skk))
+def prGreen(skk): print("\033[92m {}\033[00m" .format(skk))
+def prYellow(skk): print("\033[93m {}\033[00m" .format(skk))
+def prLightPurple(skk): print("\033[94m {}\033[00m" .format(skk))
+def prPurple(skk): print("\033[95m {}\033[00m" .format(skk))
+def prCyan(skk): print("\033[96m {}\033[00m" .format(skk))
+def prLightGray(skk): print("\033[97m {}\033[00m" .format(skk))
+def prBlack(skk): print("\033[98m {}\033[00m" .format(skk))
+
+
 #main banner function of our tool kit
 def __banner__():
 
 	timeto_end_loop = time.time()+1*5
 
 	while time.time() < timeto_end_loop:
-	    print("""
+	    prPurple("""
 	      ________________________
 	                              |                                     o        o
 	                    ----------^-----------....                        o   o
@@ -29,7 +40,7 @@ def __banner__():
 	    time.sleep(0.05)
 	    os.system("clear")
 
-	    print("""
+	    prPurple("""
 	                            __________________________
 	                           |                                       o       o
 	                 ----------^-----------....                          o   o
@@ -49,7 +60,7 @@ def __banner__():
 	    os.system("clear")
 	    #END OF LOOP!
 	    
-	print("""
+	prCyan("""
 	     _________________________________________________
 	                           |                                       o       o
 	                 ----------^-----------....                          o   o
@@ -72,30 +83,43 @@ def __banner__():
 
 #main menu function
 def __main_menu__():
-	print(" ----------------------------- ")
-	print("| [+] 1 -> DOS ATTACK         |")
-	print("| [+] 2 -> SPREAD WORM        |")
-	print("| [+] 3 -> EXTRACT PASWORDS   |")
-	print("| [!] 0 -> Quit!		     |")
-	print(" ----------------------------- ")
+	prGreen(" --------------------------------------- ")
+	prGreen("|  H E L I K O P T E R   T O O L K I T  |")
+	prGreen(" --------------------------------------- ")
+	prGreen("| [+] 1 -> DOS ATTACK                   |")
+	prGreen("| [+] 2 -> SPREAD WORM                  |")
+	prGreen("| [+] 3 -> EXTRACT CHRIOME PASWORDS     |")
+	prGreen("| [!] 0 -> Quit!		         |")
+	prGreen(" --------------------------------------- ")
 
 
 #handleeing code execution
 if __name__ == '__main__':
+	#calling functions
 	__banner__()
+	time.sleep(2)
+	
 	__main_menu__()
-
+	
+	#taking input from user
 	opt = int(input("[+] Enter Option to Perform: "))
 
+while opt != 0:
 	if opt == 0:
-		print("[!] Quitting...")
-		sys.exit(1)
+		prRed("[!] Quitting.")
+		exit(1)
 
 	elif opt == 1:
 		subprocess.call('./wifiter.sh')
+	
 	elif opt == 2:
 		os.system('python fattynigger.py')
+	
 	elif opt == 3:
-		subprocess.call('./pisher.sh')
+		os.system('python taxes.py')
+	
 	else:
+		prYellow("[!] Invalid Option.")
+		prRed("[!] Quitting.")
+		
 		exit(1)
