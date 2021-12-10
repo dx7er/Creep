@@ -25,7 +25,7 @@ def prBlack(skk): print("\033[98m {}\033[00m" .format(skk))
 #banner function to display the banner
 def banner():
     prLightGray("""
-     _____                   
+         _____                   
 	|_   _|_ ___  _____  ___ 
   	  | |/ _` \ \/ / _ \/ __|
   	  | | (_| |>  <  __/\__ \
