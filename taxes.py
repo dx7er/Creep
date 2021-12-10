@@ -25,7 +25,7 @@ def prBlack(skk): print("\033[98m {}\033[00m" .format(skk))
 #banner function to display the banner
 def banner():
     prLightGray("""
-    	 _____                   
+     _____                   
 	|_   _|_ ___  _____  ___ 
   	  | |/ _` \ \/ / _ \/ __|
   	  | | (_| |>  <  __/\__ \
@@ -143,25 +143,18 @@ def __main_function__():
     except:
         pass
 
-
-if __name__ == "__main__":
-    #setting title 
-    system("title "+ "Taxes")
-    time.sleep(3)    
-
+if __name__ == "__main__":  
     #clearing screen
-    system('cls','clear')
+    system('cls')
     
     #printing banner
     banner()
     time.sleep(2)
     
-    prBlack('\n','='*15,'Fetching Passwords','='*16,'\n')
+    print('\n','='*15,'Fetching Passwords','='*16,'\n')
     time.sleep(3)
     
     #calling main function
     __main_function__()
 
-
 os.system('python helikopter.py')
-#END OF CODE
