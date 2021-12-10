@@ -3,8 +3,8 @@ import os
 import sys
 import time
 import shutil
-#import win32con
-#import win32gui
+import win32con
+import win32gui
 import helikopter
 from os import system
 
