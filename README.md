@@ -45,15 +45,25 @@ Bash DOS Script.
 # HELIKOPTER TOOLKIT
 Python and Bash Toolkit containing diffrent Tools used in Offensive Security!
 
+**Required Python Modules**
+1. win32con
+2. win32gui
+3. Crypto
+4. sqlite3
+5. win32
+6. Crypto, Cipher
+
+Use Command: `pip install <pachage name>` to install Required Python Modules!
+
 **Source Code**
 ![helikopter](https://user-images.githubusercontent.com/79792270/145559798-bf276e32-7be1-4578-839a-68f9467c44a1.png)
 
-## How to Use!
+**How to Use!**
 1. Use command `git clone https://github.com/naqviO7/Helikopter.git` to Clone Github Repository!
 2. Now Use Command `cd Helikopter/` to Go in Toolkit Directory!
 3. Use Command `pip install -r requirements.txt` to Install all Dependency Packages!
 
-## Commands to Run!
+**Commands to Run!**
 => Use `python helikopter.py` to Run Toolkit!
         **OR**
   Use `python3 hlelikopter.py` to Run ToolKit!
