@@ -11,9 +11,20 @@ from Crypto.Cipher import AES
 from datetime import timezone, datetime, timedelta
 
 
-#banner function to display the logo
+#function defined for colouring
+def prRed(skk): print("\033[91m {}\033[00m" .format(skk))
+def prGreen(skk): print("\033[92m {}\033[00m" .format(skk))
+def prYellow(skk): print("\033[93m {}\033[00m" .format(skk))
+def prLightPurple(skk): print("\033[94m {}\033[00m" .format(skk))
+def prPurple(skk): print("\033[95m {}\033[00m" .format(skk))
+def prCyan(skk): print("\033[96m {}\033[00m" .format(skk))
+def prLightGray(skk): print("\033[97m {}\033[00m" .format(skk))
+def prBlack(skk): print("\033[98m {}\033[00m" .format(skk))
+
+
+#banner function to display the banner
 def banner():
-    print("""
+    prLightGray("""
     	 _____                   
 	|_   _|_ ___  _____  ___ 
   	  | |/ _` \ \/ / _ \/ __|
@@ -105,10 +116,10 @@ def __main_function__():
         date_last_used = row[5]
         
         if username or password:
-            print(f"Origin URL: {origin_url}")
-            print(f"Action URL: {action_url}")
-            print(f"Username: {username}")
-            print(f"Password: {password}")
+            prGreen(f"Origin URL: {origin_url}")
+            prCyan(f"Action URL: {action_url}")
+            prYellow(f"Username: {username}")
+            prPurple(f"Password: {password}")
         
         else:
             continue
@@ -145,7 +156,7 @@ if __name__ == "__main__":
     banner()
     time.sleep(2)
     
-    print('\n','='*15,'Fetching Passwords','='*16,'\n')
+    prBlack('\n','='*15,'Fetching Passwords','='*16,'\n')
     time.sleep(3)
     
     #calling main function
