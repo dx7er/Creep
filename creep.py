@@ -1,6 +1,7 @@
 import os
 import sys
 import time
+import pyfiglet
 import subprocess
 
 
@@ -14,6 +15,7 @@ def prCyan(skk): print("\033[96m {}\033[00m" .format(skk))
 def prLightGray(skk): print("\033[97m {}\033[00m" .format(skk))
 def prBlack(skk): print("\033[98m {}\033[00m" .format(skk))
 
+bnr=pyfiglet.figlet_format('Creep')
 
 #main banner function of our tool kit
 def __banner__():
@@ -73,18 +75,14 @@ def __banner__():
 	       ~_______________________________/
 	             A                    A
 	            AAAAAAAAAAAAAAAAAAAAAAAA
-	           A                        A
-			    	         _   _      _ _ _               _            
-					| | | | ___| (_) | _____  _ __ | |_ ___ _ __ 
-					| |_| |/ _ \ | | |/ / _ \| '_ \| __/ _ \ '__|
-					|  _  |  __/ | |   < (_) | |_) | ||  __/ |   
-					|_| |_|\___|_|_|_|\_\___/| .__/ \__\___|_|   
-				                                 |_|      PTYHON TOOL KIT! """)
+	           A                        A """)
+print('\t',bnr,end=' ')
+print('\t\t PYTHON TOOLKIT')
 
 #main menu function
 def __main_menu__():
 	prGreen(" --------------------------------------- ")
-	prGreen("|  H E L I K O P T E R   T O O L K I T  |")
+	prGreen("|      C R E E P     T O O L K I T      |")
 	prGreen(" --------------------------------------- ")
 	prGreen("| [+] 1 -> DOS ATTACK                   |")
 	prGreen("| [+] 2 -> SPREAD WORM                  |")
