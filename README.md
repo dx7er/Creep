@@ -55,9 +55,6 @@ Python and Bash Toolkit containing diffrent Tools used in Offensive Security!
 
 Use Command: `pip install <pachage name>` to install Required Python Modules!
 
-**Source Code**
-![helikopter](https://user-images.githubusercontent.com/79792270/145559798-bf276e32-7be1-4578-839a-68f9467c44a1.png)
-
 **How to Use!**
 1. Use command `git clone https://github.com/naqviO7/creep.git` to Clone Github Repository!
 2. Now Use Command `cd creep/` to Go in Toolkit Directory!
