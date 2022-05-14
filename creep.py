@@ -19,65 +19,14 @@ bnr=pyfiglet.figlet_format('Creep')
 
 #main banner function of our tool kit
 def __banner__():
-
-	timeto_end_loop = time.time()+1*5
-
-	while time.time() < timeto_end_loop:
-	    prPurple("""
-	      ________________________
-	                              |                                     o        o
-	                    ----------^-----------....                        o   o
-	                ~-------------            `........................---- o
-	            ~                 |   -----          ....................  o   o
-	            ~                 |           BBB  (                     o       o
-	        ~ --------------------              )
-	        ~                                   /
-	        ~                                  /
-	        ~_______________________________/
-	                A                    A
-	               AAAAAAAAAAAAAAAAAAAAAAAA
-	              A                        A
-	    """)
-
-	    time.sleep(0.05)
-	    os.system("clear")
-
-	    prPurple("""
-	                            __________________________
-	                           |                                       o       o
-	                 ----------^-----------....                          o   o
-	               ~-------------            `........................---- o
-	           ~                |   -----          ....................  o   o
-	         ~                  |           BBB  (                     o       o
-	       ~ --------------------              )
-	     ~                                   /
-	     ~                                  /
-	       ~_______________________________/
-	             A                    A
-	            AAAAAAAAAAAAAAAAAAAAAAAA
-	           A                        A
-	    """)
-
-	    time.sleep(0.05)
-	    os.system("clear")
-	    #END OF LOOP!
-	    
-	prCyan("""
-	     _________________________________________________
-	                           |                                       o       o
-	                 ----------^-----------....                          o   o
-	               ~-------------            `........................---- o
-	           ~                |   -----          ....................  o   o
-	         ~                  |           BBB  (                     o       o
-	       ~ --------------------              )
-	     ~                                   /
-	     ~                                  /
-	       ~_______________________________/
-	             A                    A
-	            AAAAAAAAAAAAAAAAAAAAAAAA
-	           A                        A """)
-print('\t',bnr,end=' ')
-print('\t\t PYTHON TOOLKIT')
+	prRed("""
+	      ____           ____  
+	  ___|  _ \ ___  ___|  _ \
+	 / __| |_) / _ \/ _ \ |_) |
+	| (__|  _ <  __/  __/  __/
+	 \___|_| \_\___|\___|_| 
+	 		naqviO7
+			  PYTHON TOOLKIT """)
 
 #main menu function
 def __main_menu__():
@@ -86,7 +35,7 @@ def __main_menu__():
 	prGreen(" --------------------------------------- ")
 	prGreen("| [+] 1 -> DOS ATTACK                   |")
 	prGreen("| [+] 2 -> SPREAD WORM                  |")
-	prGreen("| [+] 3 -> EXTRACT CHRIOME PASWORDS     |")
+	prGreen("| [+] 3 -> EXTRACT CHROME PASWORDS      |")
 	prGreen("| [!] 0 -> Quit!		         |")
 	prGreen(" --------------------------------------- ")
 
@@ -112,12 +61,13 @@ while opt != 0:
 		subprocess.call('./wifiter.sh')
 	
 	elif opt == 2:
-		os.system('python fattynigger.py')
+		os.system('python ebola.py')
 	
 	elif opt == 3:
-		os.system('python taxes.py')
+		os.system('python extractor.py')
 	
 	else:
 		prYellow("[!] Invalid Option.")
 		prRed("[!] Quitting.")
 		exit()
+#ENDOFCODE
