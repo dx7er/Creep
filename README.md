@@ -61,7 +61,7 @@ Use Command: `pip install <pachage name>` to install Required Python Modules!
 3. Use Command `pip install -r requirements.txt` to Install all Dependency Packages! 
 
 **Commands to Run!**
-1. => Use Command `bash reqs.sh` to Complete Requirements Phase!
+1. => Use Command `bash install.sh` to Complete Requirements Phase!
 2. => Use Command`python creep.py` to Run Toolkit! \
                     **OR** \
    => Use `python3 creep.py` to Run ToolKit!
