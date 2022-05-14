@@ -24,14 +24,12 @@ def prBlack(skk): print("\033[98m {}\033[00m" .format(skk))
 
 #banner function to display the banner
 def banner():
-    prLightGray("""
-         _____                   
-    	|_   _|_ ___  _____  ___ 
-      	  | |/ _` \ \/ / _ \/ __|
-      	  | | (_| |>  <  __/\__ \
-      	  |_|\__,_/_/\_\___||___/
-                              PYTHON PASSWORD EXTRACTOR
-                              		4 GOOGLE CHROME! """)
+    print("""
+           _____               _             
+  _____  _|_   _| __ __ _  ___| |_ ___  _ __ 
+ / _ \ \/ / | || '__/ _` |/ __| __/ _ \| '__|
+|  __/>  <  | || | | (_| | (__| || (_) | |   
+ \___/_/\_\ |_||_|  \__,_|\___|\__\___/|_|""")
 
 
 #function to get date and time from chrome
