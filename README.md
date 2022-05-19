@@ -45,7 +45,7 @@ Bash DOS Script.
 ![wifter](https://user-images.githubusercontent.com/79792270/145558888-87c73a12-eaee-4324-ba57-1b11d107c71f.png)
 
 ##
-# CREEP TOOLKIT
+# CREEP ToolKit
 Python and Bash Toolkit containing diffrent Tools used in Offensive Security!
 
 **Required Python Modules**
